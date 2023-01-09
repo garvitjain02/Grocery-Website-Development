@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Fresh Vegetables
+</title>
+
+<style>
+.header {
+  height: 115px;
+  text-align: center;
+}
+
+.header-left {
+  float: left;
+  width: 20%;
+  margin: 1px;
+}
+
+.header-right {
+  float: right;
+  width: 15%;
+  margin: 1px;
+}
+
+.header-center {
+  float: left;
+  width: 62%;
+}
+
+.header-banner { 
+  float: left;
+  height: 50px;
+  width: 62%;
+}
+
+.dropbtn {
+  display: block;
+  background-color: cyan;
+  border-right:1px solid black;
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn a:link, a:visited {
+  background-color: cyan;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn a:hover {
+  background-color: springgreen;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown {
+  width: 19.92%;
+  position: relative;
+  display: block;
+  float: left;
+  border-right:1px solid black;  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: springgreen;
+}
+
+.head 
+{
+   text-align: center;
+   float: center;
+   font-size:50px; 
+   font-family:"lucida handwriting", cursive; 
+   margin-top: 0%;
+   color: red;
+}
+
+body 
+{
+  background-image: url("C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: pink;
+}
+
+.block
+{
+  width: 320px;
+  font-size: 120%;
+  color: red;
+  border: 2px solid white;
+  margin: 10px;
+  background-color: white;
+}
+
+.detail
+{
+  text-align: center;
+  font-size: 100%;
+  color: black;
+}
+
+.row
+{
+  display: flex;
+}
+
+
+.column
+{
+  padding: 5px;
+}
+
+.right-block 
+{
+  width: calc(100% - 19.5%);
+  float: right;
+  min-height: 1px;
+  position: relative;
+}
+
+.left-block {
+    width: 16.5%;
+    float: left;
+    position: relative;
+    margin-right: 10px;   
+}
+
+.menu{
+   font-size: 170%;
+   text-align: center;
+}
+
+.right-banner{
+   float: right;
+   width: 30%;  
+}
+
+.left-banner{
+   float: left;
+   width: 30%;  
+}
+
+
+.menuLinks a:link {
+  color:"red";
+  text-decoration: none;
+}
+
+.menuLinks a:hover {
+  text-decoration: underline;
+}
+
+.button1 {
+  background-color: pink;		;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 24px;
+  float: right;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+.button1:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid blue;
+}
+
+.item-image {
+  height: 280;
+  width: 320;
+}
+
+#search{
+  padding: 11px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 100%;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<div class="header-left">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\logo.png" width="250" height="107.5">
+</div>
+
+<div class="header-center">
+  <form>
+    <input type="text" id="search" name="search" placeholder="Search">
+  <br>
+  </form>
+
+<div class="header-banner">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\header banner.jpg" width="175%" height="50px">
+</div>
+</div>
+
+<div class="header-right">
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\sign up.html"><button class="button1">Sign Up/Login</button></a>
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\cart.html" style="float:right;"><img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\cart.png" width="89" height="60"></a> 
+</div>
+</div>
+
+<center>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Home</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Offers</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Orders</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Payments</a></button>
+  <div class="dropdown-content">
+  <a href="#">Previous Payments</a>
+  <a href="#">Wallet Amount</a>
+  <a href="#">Payment Options</a>
+  </div>
+</div>
+<div class="dropdown" style="border-right:none;">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\contact us.html">Contact Us</a></button>
+</div>
+</center>
+<hr>  
+
+<div class="left-block column block">
+<div class="menu"><u>Categories</u></div><br>
+<ul>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\vegetables\vegetables.html">Fresh Vegetables</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\fruits\fruits.html">Fresh Fruits</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\dairy\dairy.html">Dairy Products</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bakery.html">Baked Goods</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\canned foods\canned foods.html">Canned Foods</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\frozen foods\frozen foods.html">Frozen Foods</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\sauces oils\sauces oils.html">Sauces/Oils</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\pasta grains\pasta grains.html">Pasta/Grains</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\snacks\snacks.html">Snacks</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\beverages\beverages.html">Beverages</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\pet food\pet food.html">Pet Food</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\condiments\condiments.html">Condiments</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\spices\spices.html">Spices</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\paper plastic\paper plastic.html">Paper/Plastic</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\general household\general household.html">General Household</a></li><br>
+<li class="menuLinks"><a style="color:red;" href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\personal care\personal care.html">Personal Care</a></li><br>
+</div>
+
+<div class="right-block head">
+<b>
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\abc.jpg" alt="left-banner" class="left-banner">Bakery<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\abc.jpg" alt="right-banner" class="right-banner">
+</b>
+</div>
+<div class="right-block">
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\american-garden-plain-bread-crumbs-425-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">American garden plain bread crumbs 425g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\amul-jeera-cookies-50-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">amul jeera cookies 50g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bikaji-just-baked-ajwain-cookies-400-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">bikaji just baked ajwain cookies 400g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+<br>
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bikaji-just-baked-assorted-cookies-400-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">Bikaji just baked assorted cookies 400g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bikaji-just-baked-assorted-dry-fruit-cookies-400-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">Bikaji just baked assorted dry fruit cookies 400g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bikaji-just-baked-kaju-pista-cookies-400-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">Bikaji just baked kaju pista cookies 400g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+<br>
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\bikaji-just-baked-kesar-pista-badam-cookies-400-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">Bikaji just baked kesar pista badam cookies 400g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\britannia-100-whole-wheat-bread-450-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">Britannia whole wheat bread 450g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\britannia-burger-bun-with-sesame-seed-200-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">Britannia burger bun with sesame seed 200g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+<br>
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\britannia-healthy-slice-bread-450-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">Britannia healthy slice bread 450g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\britannia-maida-pizza-base-bread-250-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">Britannia maida pizza base bread 250g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\britannia-pav-200-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">Britannia pav 200g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+<br>
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\karachi-bakery-chocolate-cashew-biscuit-250-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">Karachi bakery chocolate cashew biscuit 250g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\kots-aata-khari-200-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">Kots aata khari 200g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\kots-maska-khari-180-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">Kots maska khari 180g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+<br>
+<div class="row">
+
+<div class="block column">
+<div class="item-image">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\lovely-almond-roasted-cookies-75-g.jpg" height="280" width="320"  alt="Onion">
+</div>
+<div class="detail">Lovely almond roasted cookies 75g ₹50</div>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\parle-elaichi-rusk-400-g.jpg" height="280" width="320"  alt="Potato">
+<center><div class="detail">Parle elaichi rusk 400g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+<div class="block column">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\bakery\parle-real-elaichi-premium-rusk-273-g.jpg" height="280" width="320"  alt="Beans">
+<center><div class="detail">Parle real elaichi premium rusk 273g ₹50</div></center>
+<center><button onclick="addcart()" style="font-size: 70%;">Add to Cart (+)</button></center>
+</div>
+
+</div>
+
+</body>
+</html>
