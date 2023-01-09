@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+Garvit Grocery Store
+</title>
+
+<style>
+.header {
+  height: 115px;
+  text-align: center;
+}
+
+.header-left {
+  float: left;
+  width: 20%;
+  margin: 1px;
+}
+
+.header-right {
+  float: right;
+  width: 15%;
+  margin: 1px;
+}
+
+.header-center {
+  float: left;
+  width: 62%;
+}
+
+.header-banner { 
+  float: left;
+  height: 50px;
+  width: 62%;
+}
+
+.dropbtn {
+  display: block;
+  background-color: cyan;
+  border-right:1px solid black;
+  color: black;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border: none;
+}
+
+.dropbtn a:link, a:visited {
+  background-color: cyan;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn a:hover {
+  background-color: springgreen;
+  color: black;
+  padding: 14px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+}
+
+
+.dropdown {
+  width: 19.92%;
+  position: relative;
+  display: block;
+  float: left;
+  border-right:1px solid black;  
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: springgreen;
+}
+
+.head 
+{
+   text-align: center;
+   float: center;
+   font-size:50px; 
+   font-family:"lucida handwriting", cursive; 
+   margin-top: 0%;
+   color: red;
+}
+
+body 
+{
+  background-image: url("C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: pink;
+}
+
+.lblock
+{
+  width: 320px;
+    font-size: 120%;
+    color: rgb(0 0 0);
+    border: 2px solid rgb(0 0 0);
+    margin: 10px;
+    background-color: #f1f1f1;
+    padding: 4%;
+    padding-bottom: 7%;
+    margin-top: 8%;
+}
+
+.rblock
+{
+  width: 439px;
+    font-size: 120%;
+    color: rgb(0 0 0);
+    border: 2px solid rgb(0 0 0);
+    margin: 10px;
+    background-color: #f1f1f1;
+    padding: 4%;
+    padding-bottom: 7%;
+    margin-top: 8%;
+}
+
+.detail
+{
+  text-align: center;
+  font-size: 200%;
+  color: black;
+}
+
+.row
+{
+  display: flex;
+}
+
+
+.column
+{
+  padding: 5px;
+}
+
+.right-block 
+{
+  width: 49%;
+  float: right;
+  min-height: 1px;
+  position: relative;
+}
+
+.left-block {
+    width: 49%;
+    float: left;
+    position: relative;
+    margin-right: 10px;   
+}
+
+.menu{
+   font-size: 170%;
+   text-align: center;
+}
+
+.right-banner{
+   float: right;
+   width: 30%;  
+}
+
+.left-banner{
+   float: left;
+   width: 30%;  
+}
+
+
+.menuLinks a:link {
+  color:"red";
+  text-decoration: none;
+}
+
+.menuLinks a:hover {
+  text-decoration: underline;
+}
+
+.button1 {
+  background-color: pink;		;
+  color: black;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 24px;
+  float: right;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border: 2px solid blue;
+}
+
+.button1:hover {
+  background-color: white; 
+  color: black; 
+  border: 2px solid blue;
+}
+
+.item-image {
+  height: 280;
+  width: 320;
+}
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  width: calc(100% - 19.5%);
+  float: right;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+.my-img{}
+
+.my-img img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+
+#search{
+  padding: 11px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  font-size: 20px;
+  width: 100%;
+}
+
+#username, #password{
+padding: 7px;
+    font-size: 14px;
+    width: 75%
+}
+
+#dob{
+padding: 5px;
+    font-size: 14px;
+    width: 50%;
+}
+
+.vl{
+display: inline-block;
+    border-left: 2px solid black;
+    height: 720px;
+    position: relative;
+    margin-top: 2%;
+}
+
+.submit{
+background: white;
+    cursor: pointer;
+    border-radius: 6px;
+    width: 110px;
+    height: 35px;
+    font-size: 18px;
+}
+</style>
+</head>
+
+<body>
+<div class="header">
+<div class="header-left">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\logo.png" width="250" height="107.5">
+</div>
+
+<div class="header-center">
+<form>
+  <input type="text" id="search" name="search" placeholder="Search">
+<br>
+</form>
+
+<div class="header-banner">
+<img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\header banner.jpg" width="175%" height="50px">
+</div>
+</div>
+
+<div class="header-right">
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\sign up.html"><button class="button1">Sign Up/Login</button></a>
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\cart.html" style="float:right;"><img src="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\cart.png" width="89" height="60"></a> 
+</div>
+</div>
+
+<center>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Home</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Offers</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Orders</a></button>
+</div>
+<div class="dropdown">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html">Payments</a></button>
+  <div class="dropdown-content">
+  <a href="#">Previous Payments</a>
+  <a href="#">Wallet Amount</a>
+  <a href="#">Payment Options</a>
+  </div>
+</div>
+<div class="dropdown" style="border-right:none;">
+  <button class="dropbtn"><a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\contact us.html">Contact Us</a></button>
+</div>
+</center>
+<hr>  
+
+<div class="left-block">
+<center>
+<div class="lblock">
+<i><u><h3>Sign In</h3></u></i>
+
+<form>
+  <input type="text" id="username" name="username" placeholder="Email/Phone Number">
+<br>
+<br>
+  <input type="password" id="password" name="password" placeholder="Password">
+<br>
+</form>
+<br>
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html"><button class="submit">Sign In</button></a>
+</div>
+</center>
+</div>
+
+<div class="vl"></div>
+
+<div class="right-block" style="display: inline-block;">
+<center>
+<div class="rblock">
+<i><u><h3>Sign Up</h3></u></i>
+
+<form>
+  <input type="text" id="username" name="firstname" placeholder="Enter First Name">
+<br>
+<br>
+<input type="text" id="username" name="lastname" placeholder="Enter Last Name">
+<br>
+<br>
+Date of Birth:
+<input type="date" id="dob" name="dob" placeholder="Enter DOB">
+<br>
+<br>
+<input type="text" id="username" name="address" placeholder="Enter Address">
+<br>
+<br>
+<input type="text" id="username" name="email" placeholder="Enter Email">
+<br>
+<br>
+<input type="text" id="username" name="phone" placeholder="Enter Phone Number">
+<br>
+<br>
+  <input type="password" id="password" name="password" placeholder="Enter Password">
+<br>
+<br>
+<input type="password" id="password" name="password" placeholder="Confirm Password">
+<br>
+</form>
+<br>
+<a href="C:\Users\ADMIN\Desktop\graphic era\3rd semester\mini project\home.html"><button class="submit">Sign Up</button></a>
+</div>
+</center>
+</div>
+
+</body>
+</head>
+</html>
